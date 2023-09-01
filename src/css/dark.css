@@ -1,0 +1,31 @@
+.dark{
+    
+
+    --text-body: #9aa0ac;
+
+    --dark-theme: #001027;
+    --dark-theme2: rgb(10, 26, 49);
+    --dark-body: #001027;
+    --dark-card-bg:#001027;
+    --dark-color: #edf0f5;
+    --dark-color2: rgba(255, 255, 255, .4);
+    --dark-border: rgba(255, 255, 255, .1);
+    --dark-shadow: rgba(38, 43, 72, .11);
+    /*  */
+    --dark-card-shadow: 0 4px 25px #a8b4d01a;
+
+    --text-muted-dark: #8b94a7;
+
+    /* Progress Bar */
+    --dark-bg-progress: #ffffff0d;
+
+    /* Menu Title */
+    --menuTitle: #74829c;
+
+    /* Menu Item */
+    --menuItem: #ffffffb3;
+    --menuItem-hover: #fff;
+
+    --bs-table-bg: rgba(255,255,255,.05);
+    
+}

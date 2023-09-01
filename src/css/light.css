@@ -1,0 +1,24 @@
+.light{
+
+    --dark-body: #f4f5f7;
+    --dark-card-bg:#fff;
+    --dark-color: #495057;
+    --dark-color2: #9aa0ac;
+    --dark-border: #eff0f6;
+    --dark-bg-progress: #e9ecef;
+
+    --text-muted-dark:#8b94a7;
+
+    --dark-card-shadow: 0 4px 25px #a8b4d01a;
+
+    --color-tooltip-graph:#495057;
+
+    /* Menu Title */
+    --menuTitle: #74829c;
+
+    /* MenuItem */
+    --menuItem: #454e60;
+    --menuItem-hover: #467fcf;
+
+    --bs-table-bg: rgba(0,0,0,.05);
+}

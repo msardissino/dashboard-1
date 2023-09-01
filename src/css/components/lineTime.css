@@ -1,0 +1,71 @@
+.lineTimeBody{
+    width: 100%;
+    padding: 0 8px 0 32px;
+    position: relative;
+    margin: 8px 0;
+}
+.lineTimeBody::before{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: var(--dark-border);
+    position: absolute;
+    left: 16px;
+    top: 0;
+}
+
+.lineTimeItem{
+    position: relative;
+    margin-bottom: 20px;
+}
+.lineTimeItem:last-child{
+    margin-bottom: 0;
+}
+.lineTimeItem::before{
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: var(--primary-bg-color);
+    position: absolute;
+    left: -20px;
+    top: 7px;
+}
+.lineTimeItem.lightBlue::before{
+    background-color: var(--info);
+}
+.lineTimeItem.danger::before{
+    background-color: var(--danger);
+}
+.lineTimeItem.purple::before{
+    background-color: var(--purple);
+}
+.lineTimeItem .hour{
+    font-size: 13px;
+    color: var(--dark-color2);
+}
+.lineTimeItem .name{
+    font-size: 14px;
+    font-weight: 600;
+}
+.lineTimeItem .info{
+    font-size: 12px;
+    color: var(--dark-color2);
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    white-space: nowrap;
+}
+.lineTimeItem .info a{}
+.lineTimeItem .info a.user{
+    color: var(--info);
+}
+.lineTimeItem .info a.item{
+    color: var(--purple);
+}
+.lineTimeItem .info a.success{
+    color: var(--success);
+}
+.lineTimeItem .info a.danger{
+    color: var(--danger);
+}

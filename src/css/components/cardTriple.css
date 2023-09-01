@@ -1,0 +1,86 @@
+.cardTriple{
+    border: 1px solid var(--dark-border);
+    box-shadow: var(--dark-card-shadow);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  @media screen and (min-width: 992px) {
+    .cardTriple{
+        flex-direction: row;
+    }
+    .card1, .card2{
+        border-right: 1px solid var(--dark-border);
+    }
+  }
+  .card{
+    display: grid;
+    grid-template-areas: "datos iconBox"
+    "prog prog";
+    padding: 16px;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .card .groupData{
+    grid-area: datos;
+  }
+  .card .iconBox{
+    grid-area: iconBox;
+  }
+  .card .progressBar{
+    grid-area: prog;
+  }
+  .groupData .titleCard{
+    color: var(--text-muted-dark);
+    font-size: 14px;
+    font-weight: 600;
+}
+  .groupData .price{
+    color: var(--text-dark);
+    font-size: 24px;
+    font-weight: 600;
+    padding: 8px 0 4px 0;
+  }
+  .groupData .info{
+    font-size: 12px;
+    color: var(--dark-color2);
+  }
+ 
+  .groupData .info i{
+    font-size: 14px;
+    padding-right: 4px;
+  }
+  .groupData .info i.success{
+    color: var(--text-success);
+  }
+  .groupData .info i.danger{
+    color: var(--text-danger)
+  }
+  .groupData .info span{
+    color: var(--text-body);
+    font-weight: 600;
+  }
+  .iconBox{
+      width: 48px;
+      height: 48px;
+    line-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary02);
+    color: var(--primary-bg-color);
+    border-radius: 50%;
+  }
+  .iconBox.danger{
+    background-color: var(--danger-bg-transparent);
+    color: var(--text-danger);
+  }
+  .iconBox.secondary{
+    background-color: var(--secondary-bg-transparent);
+    color: var(--text-secondary);
+}
+
+/* Progress bar CSS en progress.css */

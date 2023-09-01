@@ -1,0 +1,111 @@
+/* Table1 productos */
+.table1, .table2{
+    overflow: hidden;
+}
+.tableWrapp{
+    display: block;
+    overflow: hidden;
+    overflow-x: auto;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.tableWrapp::-webkit-scrollbar{
+    height: 4px;
+}
+table{
+    width: 100%;
+    white-space: nowrap;
+}
+
+tr th, tr td{
+    border-bottom: 1px solid var(--dark-border);
+    color: var(--dark-color);
+    vertical-align: middle
+}
+tr th.p-24, tr td.p-24{
+    padding-left: 24px;
+}
+tr th{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 12px 8px 12px;
+
+}
+
+tr td{
+    padding: 12px;
+    font-size: 14px;
+}
+
+tr td.c-gray{
+    color: var(--text-muted-dark);
+}
+
+/* Table Sales */
+.tableWrapp.spacing{
+    padding: 0 16px;
+}
+
+table.border-all{
+    border: 1px solid var(--dark-border);
+}
+tr th.order{
+    background-color: var(--bs-table-bg);
+    font-size: 14px;
+    position: relative;
+    padding-right: 24px;
+}
+tr th.order::after, tr th.order::before{
+    
+    font-family: 'Font Awesome 6 Pro';
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+tr th.order::after{
+    content: '\f176';
+    right: 4px;
+    color: var(--dark-color2);
+}
+tr th.order::before{
+    content: '\f175';
+    right: 12px;
+}
+tr td .userTd{
+    display: grid;
+    grid-template-areas: "img name"
+    "img email";
+    justify-content: flex-start;
+    align-items: center;
+}
+tr td .userTd .imgUserCircle{
+    grid-area: img;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    margin-right: 16px;
+}
+tr td .userTd .name{
+    grid-area: name;
+    font-size: 14px;
+    line-height: 14px;
+}
+tr td .userTd .email{
+    grid-area: email;
+    font-size: 12px;
+    color: var(--dark-color2);
+    line-height: 12px;
+}
+
+tr td .date{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    line-height: 13px;
+}

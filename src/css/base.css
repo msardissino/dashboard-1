@@ -1,0 +1,189 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+/* Custom properties */
+:root{
+    /* Tipografía */
+    --fuente-principal: 'Nunito Sans', sans-serif;
+    --fuente-secundario: Verdana;
+
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1280px;
+
+    /* Colores */
+    --primary-bg-color: #467fcf;
+    --primary-bg-hover: #2e5d9f;
+    --primary-bg-border: #2e5d9f;
+    --primary01: rgba(70, 127, 207, 0.1);
+    --primary02: rgba(70, 127, 207, 0.2);
+    --primary03: rgba(70, 127, 207, 0.3);
+    --primary04: rgba(70, 127, 207, 0.4);
+    --primary05: rgba(70, 127, 207, 0.5);
+    --primary06: rgba(70, 127, 207, 0.6);
+    --primary07: rgba(70, 127, 207, 0.7);
+    --primary08: rgba(70, 127, 207, 0.8);
+    --primary09: rgba(70, 127, 207, 0.9);
+    --primary005: rgba(70, 127, 207, 0.05);
+
+    --lightpink-red: #ff7088;
+    --lightgreen: #26eda2;
+
+    --black: #000;
+    --blue: #5797fc;
+    --indigo: #6574cd;
+    --purple: #867efc;
+    --pink: #ec82ef;
+    /* --red: $danger; */
+    --orange: #fc7303;
+    --yellow: #fdb901;
+    --green: #15c763;
+    --bg-green-transparent: #00c85133;
+    --teal: #2bcbba;
+    --cyan: #1cc8e3;
+    --white: #fff;
+    --gray: #868e96;
+    --gray-dark: #343a40;
+    --azure: #28afd0;
+    --lime: #7bd235;
+    --secondary: #5eba00;
+    --success: #22c03c;
+    --info: #3ec7e8;
+    --bg-info-transparent: #3ec7e833;
+    --warning: #ffca4a;
+    --bg-warning-transparent:#ffc10733;
+    --danger: #e34a42;
+    --light: #f8f9fa;
+
+
+    --text-secondary: #5eba00;
+    --secondary-bg-transparent: #5eba0033;
+
+    --text-danger: #f66;
+    --danger-bg-transparent: #ec2d3833;
+    --bg-danger: #ec2d38;
+
+
+    --text-success: #15c763;
+    --bg-success: #5eba00;
+
+
+    --color-tooltip-graph:#495057;
+
+
+    --bs-table-bg: rgba(255,255,255,.05);
+
+}
+
+/* Adaptación a modo Oscuro */
+@media (prefers-color-scheme: dark){
+    :root{
+        /* --color-primario: #f0f0f0;
+        --color-secundario: #181818; */
+    }
+}
+
+/* Modo sin animaciones */
+@media (prefers-reduced-motion: reduce){
+    *{
+        animation: none;
+        transition: none;
+    }
+}
+
+*{
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+img, picture, video, iframe, figure{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+a{
+    display: block;
+}
+p a{
+    display: inline;
+}
+
+li{
+    list-style-type: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em{
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+blockquote::before, blockquote::after, q::before, q::after{
+    content: '';
+    content: none;
+}
+
+::selection{
+    background-color: var(--dark-color);
+    color: var(--dark-body);
+}
+
+form, input, textarea, select, button, label{
+    font-family: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    display: block;
+    color: inherit;
+}
+
+table, tr, td{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+svg{
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+body{
+    height: 100vh;
+    font-size: 100%;
+    font-family: var(--fuente-principal);
+    /* color: var(--color-primario);
+    background-color: var(--color-secundario); */
+    line-height: 1.4em;
+    background-color: var(--dark-body);
+}
+
+/*  scroll Config Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--gray-300);
+    /* border: 2px solid var(--background-app); */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--primary-bg-border);
+    border-radius: 6px;
+}
+
+/* Config graficos */
+.apexcharts-tooltip.apexcharts-theme-light{
+    color: var(--color-tooltip-graph);
+}

@@ -1,0 +1,41 @@
+.dropDown{
+    position: relative;
+}
+.dropDown .dropDownMenu{
+    position: absolute;
+    top: 0;
+    border: 1px solid var(--dark-border);
+    width: 100%;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+
+}
+.dropDownMenu.show{
+    top: 105%;
+    visibility: visible;
+    opacity: 1;
+}
+.listDropDownMenu{
+    width: 100%;
+    text-align: center;
+    background-color: var(--dark-card-bg);
+
+}
+.listDropDownMenu li{
+    padding: 8px 4px;
+    border-bottom: 1px solid var(--dark-border);
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listDropDownMenu li:hover{
+    background-color: var(--dark-body);
+}
+.listDropDownMenu li:last-child{
+    border-bottom: none;
+}

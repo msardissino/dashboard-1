@@ -1,0 +1,37 @@
+.percentage{
+    background-color: var(--primary02);
+    color: var(--primary-bg-color);
+    border: 1px solid;
+    width: min-content;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 8px;
+}
+.percentage span{
+    font-size: 11px;
+    line-height: 11px;
+
+}
+
+.percentage.success{
+    color: var(--success);
+    background-color: var(--secondary-bg-transparent);
+}
+.percentage.info{
+    color: var(--info);
+    background-color: var(--bg-info-transparent);
+}
+.percentage.warning{
+    color: var(--warning);
+    background-color: var(--bg-warning-transparent);
+}
+.percentage.green{
+    color: var(--green);
+    background-color: var(--bg-green-transparent);
+}
+.percentage.danger{
+    color: var(--danger);
+    background-color: var(--danger-bg-transparent);
+}

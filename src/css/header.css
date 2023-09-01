@@ -1,0 +1,38 @@
+/* Header */
+.navMenu{
+    background-color: var(--dark-card-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid var(--dark-border);
+
+    /* config Height fijo*/
+    height: 58px;
+    max-height: 58px;
+    min-height: 58px;
+    
+}
+.switchTheme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.switchTheme button{
+    color: var(--dark-color);
+    font-size: 24px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.toogleMenu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toogleMenu button{
+  color: var(--dark-color);
+  font-size: 24px;
+  line-height: 24px;
+  cursor: pointer;
+}

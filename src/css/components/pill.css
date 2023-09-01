@@ -1,0 +1,18 @@
+.pill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    line-height: 11px;
+    padding: 3px 5px;
+    width: min-content;
+    background-color: var(--primary-bg-color);
+    color: var(--white);
+    border-radius: 10px;
+}
+.pill.danger{
+    background-color: var(--bg-danger);
+}
+.pill.success{
+    background-color: var(--bg-success);
+}

@@ -1,0 +1,162 @@
+/* SideBar Left */
+.sidebarLeft{
+    transition: .3s;
+    overflow: hidden;
+    width: 57px;
+  }
+  .sidebarLeft.expanded, .sidebarLeft.hovered{
+    width: 273px;
+  }
+  
+  /* Logo App */
+  .logoApp{
+    border-right: 1px solid var(--dark-border);
+    border-bottom: 1px solid var(--dark-border);
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-color);
+    gap: 4px;
+    background-color: var(--dark-card-bg);
+  
+    /* config Height fijo*/
+    height: 58px;
+    max-height: 58px;
+    min-height: 58px;
+  }
+  .logoApp i{
+    font-size: 24px;
+    line-height: 25px;
+    color: inherit;
+  }
+  .logoApp_name{
+    color: inherit;
+    font-size: 20px;
+    font-weight: 600;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    transition-delay: .5s;
+    white-space: nowrap;
+  }
+  .sidebarLeft.expanded .logoApp_name,
+  .sidebarLeft.hovered .logoApp_name{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  /* Fin Logo App */
+  /* Menu Left */
+  .navBarLeft{
+    border-right: 1px solid var(--dark-border);
+    color: var(--dark-color);
+    background-color: var(--dark-card-bg);
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 100%;
+    overflow-y: auto;
+    
+  }
+  .navBarLeft::-webkit-scrollbar{
+    width: 2px;
+  }
+  .navBarLeft::-webkit-scrollbar-thumb{
+    background-color: var(--primary01);
+  
+  }
+  .navBarLeft:hover::-webkit-scrollbar-thumb{
+    background-color: var(--primary04);
+  
+  }
+  .navBar_menu{
+    padding-top: 16px;
+  }
+  .navBar_menu .menuTitle{
+    color: var(--menuTitle);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 11px;
+    font-weight: 500;
+    display: none;
+    white-space: nowrap;
+  }
+  
+  .sidebarLeft.expanded .navBar_menu .menuTitle, 
+  .sidebarLeft.hovered .navBar_menu .menuTitle{
+    display: block;
+  }
+  .navBarItem{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .navBarItem_link{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--menuItem);
+    height: 50px;
+  }
+  .navBarItem_link:hover{
+    color: var(--menuItem-hover);
+  }
+  .navBarItem_link i:first-child{
+    font-size: 18px;
+  }
+  .intemNavBar_name{
+    font-size: 14px;
+    line-height: 15px;
+    vertical-align: center;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .navBarItem_link i:last-child{
+    font-size: 10px;
+  }
+  
+  .intemNavBar_name, .navBarItem_link i:last-child{
+    display: none;
+  }
+  .sidebarLeft.expanded .intemNavBar_name,
+  .sidebarLeft.expanded .navBarItem_link i:last-child,
+  .sidebarLeft.hovered .intemNavBar_name,
+  .sidebarLeft.hovered .navBarItem_link i:last-child{
+    display: inline-block;
+    opacity: 1;
+    visibility: visible;
+  }
+  .subMenu{
+    display: none;
+  }
+  .sidebarLeft.hovered .subMenu.show,
+  .sidebarLeft.expanded .subMenu.show{
+    display: block;
+  }
+  
+  .subMenuItem{
+    padding: 8px 16px 8px 24px;
+  }
+  .subMenuItem_link{
+    position: relative;
+    color: var(--menuItem);
+    font-size: 13px;
+  }
+  .subMenuItem:hover .subMenuItem_link{
+    color: var(--menuItem-hover);
+  }
+  .subMenuItem_link::before{
+    content: '\f111';
+    font-family: 'Font Awesome 6 Pro';
+    font-size: 6px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -12px;
+  }
+  /* Fin Menu Left */

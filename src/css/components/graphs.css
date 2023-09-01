@@ -1,0 +1,131 @@
+/*  Graficos */
+.graph1, .graph2{
+    overflow: hidden;
+}
+.grafico{
+    border: 1px solid var(--dark-border);
+    box-shadow: var(--dark-card-shadow);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    height: 100%;
+}
+.graficoHeader{
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--dark-border);
+}
+.graficoTitle{
+    font-size: 16px;
+    font-weight: 600;
+}
+.grafico .groupBtns{
+    display: flex;
+    gap: 8px;
+}
+.groupBtns .btn{
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 13px;
+    border: 1px solid transparent;
+    transition: .3s;
+    cursor: pointer;
+}
+.btn.ghost{
+    background-color: transparent;
+}
+.btn.ghost:hover{
+    border-color: var(--primary01);
+}
+.btn.primary{
+    background-color: var(--primary-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-color: var(--primary-bg-color);
+    color: var(--white);
+    font-weight: 600;
+}
+.btn.primary:hover{
+    background-color: var(--primary-bg-hover);
+    border-color: var(--primary04);
+}
+.btn.primary i{
+    font-size: 10px;
+}
+.graficoBody{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.graph{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.graficoFooter{
+    display: flex;
+    height: min-content;
+}
+.graficoFooter .footerCol{
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--dark-border);
+
+}
+.graficoFooter .footerCol h6{
+    font-size: 12px;
+    color: var(--text-body);
+    position: relative;
+}
+.graficoFooter .footerCol h6.circle::after{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--primary-bg-color);
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.graficoFooter .footerCol h6.circle.green::after{
+    background-color: var(--green);
+}
+.footerCol .infoFoot{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.footerCol .infoFoot .number{
+    font-size: 20px;
+    font-weight: 600;
+}
+.footerCol .infoFoot .porcentaje{
+    font-size: 14px;
+}
+.footerCol .infoFoot .porcentaje.success{
+    color: var(--text-success);
+}
+.footerCol .infoFoot .porcentaje.danger{
+    color: var(--text-danger);
+}
+.footerCol .infoFoot .porcentaje i{
+    padding-right: 4px;
+}
+.footerCol.left{
+    border-right: 1px solid var(--dark-border);
+}
+.footerCol.right{}
