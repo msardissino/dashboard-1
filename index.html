@@ -1344,6 +1344,7 @@
 
       tooglers.forEach((toogler) => {
         toogler.addEventListener('click', ()=>{
+          removeClassDW()
           toogler.nextElementSibling.classList.toggle('show')
           const lista = toogler.nextElementSibling
           // console.log(lista.firstElementChild)
@@ -1360,6 +1361,12 @@
           })
         })
       })
+      function removeClassDW() {
+        const elements = document.querySelectorAll('.dropDownMenu.show')
+        elements.forEach(function(element){
+          element.classList.remove('show');
+        })
+      }
     </script>
 </body>
 </html>
